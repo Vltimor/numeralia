@@ -1,13 +1,14 @@
 table {
+  border: 2px solid black; /* Bordes externos para la tabla */
   width: 100%;
   border-collapse: collapse;
-  border="1"
-  margin-bottom: 20px; /* Espacio entre tablas */
+  margin-bottom: 40px; /* Espacio entre tablas */
 }
 
 th, td {
-  padding: 10px;
-  text-align: left;
+  border: 1px solid black; /* Bordes de las celdas */
+  padding: 10px; /* Espaciado interno */
+  text-align: center; /* Centra el contenido */
   border-bottom: 1px solid #ddd;
 }
 
