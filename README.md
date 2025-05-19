@@ -1,6 +1,6 @@
 # Numeralia
 
-Numeralia es un proyecto que presenta datos sobre México de manera accesible y visual. Su objetivo es proporcionar información relevante sobre diversos aspectos del país, incluyendo estadísticas económicas, demográficas y sociales.
+Numeralia México es un proyecto que presenta datos sobre México de manera accesible y visual. Su objetivo es proporcionar información relevante sobre diversos aspectos del país, incluyendo estadísticas económicas, demográficas y sociales.
 
 ## 🚀 Características
 
