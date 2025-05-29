@@ -25,6 +25,7 @@ pobreza, PIB, empleo, y más, con fuentes oficiales como INEGI, BANXICO, SHCP y 
 
   <nav>
 <a href="#deuda">[ Deuda ]</a>
+<a href="#fobaproa">[ Fobaproa ]</a>
 <a href="#inflacion">[ Inflación ]</a>
 <a href="#deficits">[ Déficits ]</a>
 <a href="#pib">[ PIB ]</a>
@@ -95,8 +96,68 @@ function abrirVentana(event, url) {
 <p class="derecha"><a href="#inicio">↑ Volver al inicio</a></p>
 <br>
 
+<section id="fobaproa">
+<h2>2. Fobaproa</h2>
+<table>
+<caption>¿Cuánto se ha pagado de FOBAPROA con los Impuestos de los Contribuyentes? (millones de pesos)</caption>
+<thead>
+<tr>
+<th></th><th>Concepto</th>				<th>1999 - Dic 2024<br>
+							Cantidades Sin Actualizar<sup>[1]</sup></th>	<th>Cantidades Actualizadas a Dic 2024<br>Método 1</th>	<th>Cantidades Actualizadas a Dic 2024<br>Método 2</th>	<th>Observaciones</th>
+</tr>
+</thead>
+<tr>
+<td></td><td>Deuda Inicial</td>				<td>$687,844</td>				<td>$687,844</td>					<td>$2'211,083</td>				<td>En el Método 1 se le incluyen a los Intereses Generados Actualizados ($2'513,321) la parte de la actualización que le 
+																										correponde a la Deuda Inicial, en este método se considera a la Deuda Inicial sin actualizar.</td>
+</tr>
+<tr>
+<td>+</td><td>Intereses Generados</td>			<td>$1'523,239</td>				<td>$2'513,321</td>					<td>$990,082</td>				<td>En Método 2, a los $990,082 se le excluyen la actualización de la parte que le corresponde a la Deuda Inicial, porque
+																										a la Deuda Inicial sí se le está aplicando la actualización.</td>
+</tr>
+<tr>
+<td>-</td><td>Cuotas Bancarias</td>			<td>$287,554</td>				<td>$425,967</td>					<td>$425,967</td>				<td></td>
+</tr>
+<tr>
+<th>-</th><td>Recuperaciones</td>			<td>$102,284</td>				<td>$185,429</td>					<td>$185,429</td>				<td>La cantidad actualizada es una estimación porque no se tiene el dato exacto en que meses se realizaron las Recuperaciones</td>
+</tr>
+<tr>
+<td>-</td><td>Disminución Nuevo Programa</td>		<td>$104,770</td>				<td>$188,938</td>					<td>$188,938</td>				<td>La cantidad actualizada es una estimación porque no se tiene el dato exacto en que meses se aplicó la Disminución</td>
+</tr>
+<tr>
+<td>-</td><td>Rendimientos de Inversiones</td>		<td>$59,377</td>				<td>-$107,078</td>					<td>$107,078</td>				<td>La cantidad actualizada es una estimación porque no se tiene el dato exacto en que meses se aplicaron los Rendimientos</td>
+</tr>
+<tr>
+<td>-</td><td>Impuestos destinados al pago del FOBAPROA - Ramo 34</td><td>$640,468</td>			<td>$1,155,807</td>					<td>$1,155,807</td>				<td>Unicamente estas cantidades son los Impuestos de los contribuyentes que se han utilizado para pagar el FOBAPROA, 
+																										que suman $1.16 Billones de pesos actualizados a Diciembre de 2024, y no los más de $2 Billones de pesos que de puros intereses se han pagado con los impuestos 
+																										de los contribuyentes que da a entender La Jornada en la publicación <a href="https://www.jornada.com.mx/noticia/2025/04/30/politica/el-fobaproa-ha-costado-mas-de-2-billones-y-todavia-se-debe-otro">
+																										El Fobaproa ha costado más de $2 billones y todavía se debe otro</a>, La Jornada no explica que el IPAB destina otros recursos  
+																										ajenos al presupuesto del gobierno (por ejemplo, las cuotas bancarias) para pagar lo que la gente popularmente le llama el FOBAPROA</td>
+</tr>
+<tr>
+<td>=</td><td>Saldo por Pagar</td>			<td>$1'016,630</td>				<td>$1,137,946 <sup>[2]</sup></td>			<td>$1,137,946 <sup>[2]</sup></td>		<td></td>
+</tr>
+</table>
+
+<br>
+<p>
+DATO CURIOSO: Con los impuestos de los contribuyentes se han pagado $1.1 Billones de pesos de FOBAPROA en 25 años, mientras Sheinbaum en sólo 7 meses de 
+gobierno endeudó al país con casi $1 Billón de pesos (Ver sección 1. Deuda)
+</p>
+<br> 
+
+<p>
+<sup>[1]</sup>Informe IPAB Seguro de Depósitos Bancarios de México 2024.<br>
+ <sup>[2]</sup>Información de Finanzas Públicas y Deuda Pública, Enero - Diciembre de 2024<br>
+</p> 
+</section>
+
+<br>
+<p class="derecha"><a href="#inicio">↑ Volver al inicio</a></p>
+<br>
+
+
     <section id="inflacion">
-<h2>2. Inflación</h2>
+<h2>3. Inflación</h2>
 <table>
 <caption>Inflación Acumulada por Sexenio</caption>
   <tr>
@@ -145,7 +206,7 @@ function abrirVentana(event, url) {
 
 
     <section id="deficits">
-<h2>3. Déficits</h2>
+<h2>4. Déficits</h2>
 <table>
 <caption>Promedio de Déficits Fiscales por Sexenio</caption>
   <tr>
@@ -192,7 +253,7 @@ function abrirVentana(event, url) {
 <br>
 
     <section id="pib">
-<h2>4. PIB</h2>
+<h2>5. PIB</h2>
 <table>
 <caption>Crecimiento de PIB de México por Sexenio</caption>
   <tr>
@@ -443,7 +504,7 @@ baratas ni caras.
 
 
     <section id="IED">
-<h2 id="ied">5. Inversión Extranjera Directa (IED)</h2>
+<h2 id="ied">6. Inversión Extranjera Directa (IED)</h2>
 <table>
 <caption>Porcentaje Promedio de la IED captada por México del Total de la IED del Mundo por Sexenio</caption>
   <tr>
@@ -632,7 +693,7 @@ Promedio Carencias Sociales</td>																					<td>41.90%<br>51'900,000<br
 
 
     <section id="empleo">
-<h2>7. Empleo</h2>
+<h2>8. Empleo</h2>
 <table>
 <caption>Salarios Mínimos por Sexenio, Pesos por día<sup>[1]</sup> y Puestos de Trabajo Afiliados al IMSS<sup>[2]</sup></caption>
 <thead>
@@ -675,7 +736,7 @@ Promedio Carencias Sociales</td>																					<td>41.90%<br>51'900,000<br
 
 
     <section id="energeticos">
-<h2>8. Energéticos</h2>
+<h2>9. Energéticos</h2>
 <table>
 <caption>Producción Petrolera PEMEX</caption>
   <tr>
