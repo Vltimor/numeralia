@@ -56,3 +56,17 @@
 p.derecha {
     text-align: right; /* Solo este párrafo alineado a la derecha */
 }
+
+p.centrado {
+    text-align: center; /* Solo este párrafo centrado */
+}
+
+.fecha-publicacion {
+  text-align: right;
+  font-weight: bold; /* Puedes darle estilo especial */
+  color: blue;
+  font-size: 14px;
+  font-style:italic;
+}
+
+
