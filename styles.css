@@ -79,3 +79,6 @@ tfoot td {
   border-top: 2px solid #ccc; /* Una línea superior para separarlo del cuerpo de la tabla */
 }
 
+.fila-promedio {
+    font-weight: bold;
+}
