@@ -2,6 +2,32 @@
 <html lang="es">
 
 <head>
+<!-- REDIRECCIONAMIENTO DE MULTIPLES ANCLAS -->
+<script>
+  (function() {
+    // 1. Definimos las equivalencias (Ancla vieja: URL nueva)
+    const rutas = {
+      "#refinacion": "https://vltimor.github.io/datos-sin-vaselina/energeticos",
+      "#inflación":  "https://vltimor.github.io/datos-sin-vaselina/inflacion",
+      "#inflacion":   "https://vltimor.github.io/datos-sin-vaselina/inflacion" // Por si alguien lo escribe sin acento
+    };
+
+    // 2. Obtenemos el ancla que trae el usuario (ej. #refinacion)
+    const anclaActual = window.location.hash;
+
+    // 3. Verificamos si esa ancla está en nuestra lista
+    if (rutas[anclaActual]) {
+      // Si existe, redirigimos a la sección específica
+      window.location.replace(rutas[anclaActual]);
+    } else {
+      // Si no existe o es la página principal, mandamos al home nuevo
+      window.location.replace("https://vltimor.github.io/datos-sin-vaselina");
+    }
+  })();
+</script>
+<!-- TERMINA REDIRECCIONAMIENTO DE MULTIPLES ANCLAS -->
+	
+<!-- REDIRECCIONAMIENTO DE UNA SOLA ANCLA
 <script>
   (function() {
     // 1. Definimos el mapeo de rutas específicas
@@ -15,6 +41,7 @@
     }
   })();
 </script>
+ TERMINA REDIRECCIONAMIENTO DE UNA SOLA ANCLA -->
 <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Explora datos económicos y sociales de México por sexenio presidencial. Consulta estadísticas de PIB, deuda pública, inflación, pobreza y más, con fuentes oficiales (INEGI, BANXICO)." />
@@ -968,4 +995,5 @@ function abrirVentana(event, url) {
 </body>
 
 </html>
+
 
