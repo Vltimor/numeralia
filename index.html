@@ -2,7 +2,20 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
+<script>
+  (function() {
+    // 1. Definimos el mapeo de rutas específicas
+    // Si entran con #refinacion, van a /energeticos
+    if (window.location.hash === "#refinacion") {
+      window.location.replace("https://vltimor.github.io/datos-sin-vaselina/energeticos");
+    } 
+    // 2. Redirección general (si no es el ancla anterior, van al home nuevo)
+    else {
+      window.location.replace("https://vltimor.github.io/datos-sin-vaselina");
+    }
+  })();
+</script>
+<meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Explora datos económicos y sociales de México por sexenio presidencial. Consulta estadísticas de PIB, deuda pública, inflación, pobreza y más, con fuentes oficiales (INEGI, BANXICO)." />
   <title>Datos Sin Vaselina: Datos Económicos y Sociales por Sexenio (PIB, Deuda, Inflación)</title>
@@ -955,3 +968,4 @@ function abrirVentana(event, url) {
 </body>
 
 </html>
+
