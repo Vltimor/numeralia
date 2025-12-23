@@ -5,8 +5,9 @@
 <!-- REDIRECCIONAMIENTO DE MULTIPLES ANCLAS -->
 <script>
   (function() {
-    // Aseguramos que el script solo actúe si estamos en el dominio viejo
-    if (window.location.href.includes("numeralia")) {
+    // Solo ejecutamos si el navegador está en el sitio viejo
+    if (window.location.hostname.includes("numeralia")) {
+      
       const rutas = {
         "#refinacion": "https://vltimor.github.io/datos-sin-vaselina/energeticos/",
         "#inflación":  "https://vltimor.github.io/datos-sin-vaselina/inflacion/",
@@ -19,14 +20,18 @@
 
       const anclaActual = window.location.hash;
 
+      // Si el ancla existe en nuestra lista, redirigimos a la subcarpeta
       if (rutas[anclaActual]) {
         window.location.replace(rutas[anclaActual]);
-      } else {
+      } 
+      // Si no hay ancla o es otra, mandamos al home nuevo
+      else {
         window.location.replace("https://vltimor.github.io/datos-sin-vaselina/");
       }
     }
   })();
 </script>
+
 <!-- TERMINA REDIRECCIONAMIENTO DE MULTIPLES ANCLAS -->
 	
 <!-- REDIRECCIONAMIENTO DE UNA SOLA ANCLA
@@ -998,6 +1003,7 @@ function abrirVentana(event, url) {
 </body>
 
 </html>
+
 
 
 
